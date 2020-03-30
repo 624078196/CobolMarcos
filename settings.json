@@ -1,0 +1,31 @@
+{
+    "editor.fontSize": 16,
+    "editor.tabSize": 4,
+    "winopacity.opacity": 223,
+    "macros": {
+        "addKome": [
+          "cursorLineStart",
+          "cursorRight",
+          "cursorRight",
+          "cursorRight",
+          "cursorRight",
+          "cursorRight",
+          "cursorRight",
+          "cursorRightSelect",
+          {"command": "type", "args": {"text": "*"}}
+        ],
+        "addDate": [
+          "cursorLineEnd",
+          {"command": "type", "args": {"text": "                                                                        "}},
+          "cursorLineStart",
+          {"command": "cursorMove", "args": {"to": "right", "by": "character", "value": 72}},
+          {"command": "type", "args": {"text": "AD"}},
+          "editor.action.trimTrailingWhitespace"
+          //{"command": "insertDateString.insertDate"},
+          ]
+      },
+      "insertDateString.formatDate": "YYMMDD",
+      "files.trimTrailingWhitespace": true,
+      "editor.renderWhitespace": "all",
+      "editor.fontFamily": " 'MS Mincho'"
+}
